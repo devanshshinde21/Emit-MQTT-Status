@@ -9,7 +9,7 @@ This project demonstrates the integration of MQTT, RabbitMQ, and MongoDB. The fi
 - Python 3.8+
 - RabbitMQ
 - MongoDB
-- Required Python packages: `paho-mqtt`, `pymongo`, `pika`, `fastapi`, `uvicorn`, `pandas`,`mosquitto`
+- Required Python packages: `paho-mqtt`, `pymongo`, `pika`, `fastapi`, `uvicorn`, `pandas`,`mosquitto`, `Mongo DB Compass`
 
 ## Installation
 
@@ -28,12 +28,12 @@ This project demonstrates the integration of MQTT, RabbitMQ, and MongoDB. The fi
    -  sudo apt install mosquitto mosquitto-clients
    -  sudo systemctl enable mosquitto
    -  sudo systemctl start mosquitto
-   -  
+
 4. By default, Mosquitto works out of the box, So you may want to configure it for specific needs
    - Configuration file you may found at this path "/etc/mosquitto/mosquitto.conf"
    - then Open the conf file and add below mentioned two lines at the end of the file
-     listener 1883
-     allow_anonymous true
+         listener 1883
+         allow_anonymous true
    - Then use keys to ctrl+X then it will ask to save the buffer, Then Press Y.
    - Now the confgis is set in the file.
      
@@ -51,5 +51,5 @@ This project demonstrates the integration of MQTT, RabbitMQ, and MongoDB. The fi
 - About fetch_status_count_rest_api.py script
   This script sets up a FastAPI server that provides an endpoint to fetch data from MongoDB based on start and end times.
 - Using below command you can start the Fast API server
-  uvicorn fecth_status_count_rest_api:app --reload
+- uvicorn fecth_status_count_rest_api:app --reload
    
