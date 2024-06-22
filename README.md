@@ -32,8 +32,8 @@ This project demonstrates the integration of MQTT, RabbitMQ, and MongoDB. The fi
 4. By default, Mosquitto works out of the box, So you may want to configure it for specific needs
    - Configuration file you may found at this path "/etc/mosquitto/mosquitto.conf"
    - then Open the conf file and add below mentioned two lines at the end of the file
-         listener 1883
-         allow_anonymous true
+     1. listener 1883
+     2. allow_anonymous true
    - Then use keys to ctrl+X then it will ask to save the buffer, Then Press Y.
    - Now the confgis is set in the file.
      
